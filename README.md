@@ -156,7 +156,7 @@ Specifies the value that will arrive when the button is up (i.e. in normal statu
 
 ### Events
 Add all events in the list, for which an output needs to be sent (when the event occurs).
-The first 5 events indicate ***user intent*** event types:
+The first 9 events indicate ***user intent*** event types:
 
 + `clicked`: when a button is pressed and released rapidly one time.
 + `double_clicked`: when a button is pressed and released rapidly two times.
