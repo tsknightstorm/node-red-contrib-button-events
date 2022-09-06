@@ -63,7 +63,10 @@ Since it is not always easy to determine timing settings, this node offers a cal
 ```
 
 3. Start the calibration for 3 minutes by injecting a message with topic *"start_calibration"*.
-4. Repeat the button actions at least 10 times to get a reliable calibration result. Do this in the slowest speed you would like to detec multiclicks. Perform "thentime_click" action.
+4. Repeat the button actions at least 10 times to get a reliable calibration result. Do this in the slowest speed you would like to detect multiclicks. Perform "thentime_click" action.
+
+REMARK: We would like to know how long the node needs to wait until it is clear that no more clicks are following and we can perform a clicked action. Or how long we need to wait when a button is pressed until we can perform a pressed action. If we want to detect actions very slow (slow clicking, long waiting times), it will take longer after your clicking until the action of it will start. If you want a short reaction time you need to click faster for calibration and also in your use case later. The number of clicks are counted with the same timings, so it is not needed to calibrate every pattern by it selves. 
+
 5. Stop the calibration by injecting a message with topic *"stop_calibration"*.
 6. An output message will appear in the Debug sidebar, containing the calculated calibration settings.
 7. Apply those settings to this node by copying the calibration results into the config screen of this node:
